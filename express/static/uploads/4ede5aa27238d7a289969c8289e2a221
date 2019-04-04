@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>热门问题</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    ">
+    <link rel="stylesheet" href="css/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+    <link rel="stylesheet" href="css/demos.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body ontouchstart>
+    <div class="bd">
+      <div class="page__bd">
+        <div class="weui-search-box">
+          <div class="weui-search-bar" id="searchBar">
+            <form class="weui-search-bar__form" action="#">
+              <div class="weui-search-bar__box">
+                <i class="weui-icon-search"></i>
+                <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required="">
+                <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+              </div>
+              <label class="weui-search-bar__label" id="searchText" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+                <i class="weui-icon-search"></i>
+                <span>搜索</span>
+              </label>
+            </form>
+            <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+          </div>
+        </div>
+        <div class="weui-tab">
+          <div class="weui-navbar">
+            <a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+              选项一
+            </a>
+            <a class="weui-navbar__item" href="#tab2">
+              选项二
+            </a>
+            <a class="weui-navbar__item" href="#tab3">
+              选项三
+            </a>
+          </div>
+          <div class="weui-tab__bd">
+            <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+              <div>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                    <p>1111.请问月老那里出现呢？</p>
+                  </div>
+                  <div class="weui-cell__ft">356浏览</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                    <p>2.请问月老那里出现呢？</p>
+                  </div>
+                  <div class="weui-cell__ft">356浏览</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                    <p>3.请问月老那里出现呢？</p>
+                  </div>
+                  <div class="weui-cell__ft">356浏览</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                    <p>4.请问月老那里出现呢？</p>
+                  </div>
+                  <div class="weui-cell__ft">356浏览</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                    <p>5.请问月老那里出现呢？</p>
+                  </div>
+                  <div class="weui-cell__ft">356浏览</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                    <p>6.请问月老那里出现呢？</p>
+                  </div>
+                  <div class="weui-cell__ft">356浏览</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                    <p>7.请问月老那里出现呢？</p>
+                  </div>
+                  <div class="weui-cell__ft">356浏览</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                    <p>8.请问月老那里出现呢？</p>
+                  </div>
+                  <div class="weui-cell__ft">356浏览</div>
+                </a>
+              </div>
+            </div>
+            <div id="tab2" class="weui-tab__bd-item">
+              <div>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                    <p>1.请问月老那里出现呢？</p>
+                  </div>
+                  <div class="weui-cell__ft">356浏览</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                    <p>22222.请问月老那里出现呢？</p>
+                  </div>
+                  <div class="weui-cell__ft">356浏览</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                    <p>3.请问月老那里出现呢？</p>
+                  </div>
+                  <div class="weui-cell__ft">356浏览</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                    <p>4.请问月老那里出现呢？</p>
+                  </div>
+                  <div class="weui-cell__ft">356浏览</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                    <p>5.请问月老那里出现呢？</p>
+                  </div>
+                  <div class="weui-cell__ft">356浏览</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                    <p>6.请问月老那里出现呢？</p>
+                  </div>
+                  <div class="weui-cell__ft">356浏览</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                    <p>7.请问月老那里出现呢？</p>
+                  </div>
+                  <div class="weui-cell__ft">356浏览</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                    <p>8.请问月老那里出现呢？</p>
+                  </div>
+                  <div class="weui-cell__ft">356浏览</div>
+                </a>
+              </div>
+            </div>
+            <div id="tab3" class="weui-tab__bd-item">
+              <div>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                    <p>1.请问月老那里出现呢？</p>
+                  </div>
+                  <div class="weui-cell__ft">356浏览</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                    <p>2.请问月老那里出现呢？</p>
+                  </div>
+                  <div class="weui-cell__ft">356浏览</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                    <p>33333.请问月老那里出现呢？</p>
+                  </div>
+                  <div class="weui-cell__ft">356浏览</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                    <p>4.请问月老那里出现呢？</p>
+                  </div>
+                  <div class="weui-cell__ft">356浏览</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                    <p>5.请问月老那里出现呢？</p>
+                  </div>
+                  <div class="weui-cell__ft">356浏览</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                    <p>6.请问月老那里出现呢？</p>
+                  </div>
+                  <div class="weui-cell__ft">356浏览</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                    <p>7.请问月老那里出现呢？</p>
+                  </div>
+                  <div class="weui-cell__ft">356浏览</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                  <div class="weui-cell__bd">
+                    <p>8.请问月老那里出现呢？</p>
+                  </div>
+                  <div class="weui-cell__ft">356浏览</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/jquery-weui.js"></script>
+  </body>
+</html>

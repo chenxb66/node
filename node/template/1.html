@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册登录</title>
+    <script src="https://download2.qcplay.com/web/static/plugins/jquery/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+    <ul>
+        <li><input type="text" name="username" placeholder="请输入帐号"></li>
+        <li><input type="text" name="password" placeholder="请输入密码"></li>
+        <li>
+            <button id="login">登录</button>
+            <button id="reg">注册</button>
+        </li>
+    </ul>
+    <script>
+        $(function() {
+            var $username = $('input[name=username]');
+            var $password = $('input[name=password]');
+
+            $('#reg').click(function() {
+                $.ajax({
+                    url: '/reg',
+                    type: 'POST',
+                    data: {
+                        username: $username.val(),
+                        password: $password.val()
+                    },
+                    dataType: 'json',
+                    success: function(json) {
+                        alert(json.msg);
+                    }
+                })
+            });
+            $('#login').click(function() {
+                $.ajax({
+                    url: '/login',
+                    type: 'GET',
+                    data: {
+                        username: $username.val(),
+                        password: $password.val()
+                    },
+                    dataType: 'json',
+                    success: function(json) {
+                        alert(json.msg);
+                    }
+                })
+            })
+        });
+    </script>
+</body>
+</html>

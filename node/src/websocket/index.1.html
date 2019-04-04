@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://localhost:8080/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <input type="text" id="message"><button id="btn">发送</button>
+    <script>
+
+        let btn = document.querySelector('#btn');
+        let text = document.querySelector('#message');
+        let sock = io.connect('ws://localhost:8080');
+
+        // 接收服务器发过来的消息
+        sock.on('server-send', (message) => {
+            console.log(message);
+        })
+
+        btn.onclick = () => {
+            sock.emit('client-send', text.value);
+        }
+    </script>
+</body>
+</html>
