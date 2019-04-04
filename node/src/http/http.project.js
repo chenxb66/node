@@ -1,3 +1,6 @@
+/**
+ * 简单的注册登录系统，基于原生http开发
+ */
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
