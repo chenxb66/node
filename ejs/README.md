@@ -1,6 +1,37 @@
 # ejs
 
-# koa-ejs
+## 普通使用
+- 模版
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>测试ejs</title>
+</head>
+<body>
+    <ul>
+    <% name.forEach(item => { -%>
+        <li><%= item %></li>
+    <% }) -%>
+    </ul>
+</body>
+</html>
+```
+- 代码
+```javascript
+const ejs = require('ejs');
+
+
+ejs.renderFile('./resources/views/index/index.html', {name: [1, 2, 3]}, (err, data) => {
+    console.log(data);
+});
+```
+
+## koa-ejs
+
 ```javascript
 const Koa = require('koa');
 const ejs = require('koa-ejs');
@@ -17,6 +48,6 @@ ejs(app, {
     debug: false // 调试信息
 })
 
-server.use(async ctx => {
-    ctx.render('index/index', {});
+app.use(async ctx => {
+    await ctx.render('index/index', {});
 });

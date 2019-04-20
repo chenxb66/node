@@ -1,0 +1,17 @@
+{
+  "name": "gulp",
+  "version": "1.0.0",
+  "description": "- 安装全局启动器\r ```shell\r npm i gulp -g\r ```\r - 安装代码库\r ```shell\r npm i gulp -D\r ```",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "gulp": "^4.0.0"
+  }
+}

@@ -1,17 +1,16 @@
 {
-  "name": "ejs",
+  "name": "3",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "ejs": "^2.6.1",
-    "koa": "^2.7.0"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^2.1.1",
+    "style-loader": "^0.23.1"
+  }
 }

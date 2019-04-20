@@ -255,6 +255,4 @@ app.use(async (ctx, next) => {
 app.use(async ctx => {
     throw 404;
 });
-
-
 ```
