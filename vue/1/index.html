@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="node_modules/vue/dist/vue.min.js"></script>
+    <script src="node_modules/vue-router/dist/vue-router.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <button @click="jumpIndex">首页</button>
+        <button @click="jumpNews">新闻</button>
+        <router-view name="header"></router-view>
+        <router-view></router-view>
+        <router-view name="footer"></router-view>
+    </div>
+</body>
+<script>
+const HeaderCompnent = {
+    template: `
+    <div>
+        <h2>头部</h2>
+    </div>    
+    `
+};
+
+const IndexCompenent = {
+    template: `
+    <div>
+        <h1>首页</h1>
+    </div>
+    `
+}
+
+const NewsCompnent = {
+    template: `
+    <div>{{this.$route.params.id}}</div>
+    `
+};
+
+const FooterCompenet = {
+    template: `
+    <div>
+        <h2>底部版权</h2>
+    </div>
+    `
+}
+
+const router = new VueRouter({
+    routes: [
+        {
+            path: "/",
+            name: "index",
+            components: {
+                header: HeaderCompnent,
+                default: IndexCompenent,
+                footer: FooterCompenet
+            }
+        },
+        {
+            path: "/news/:id",
+            name: "news",
+            components: {
+                header: HeaderCompnent,
+                default: NewsCompnent,
+                footer: FooterCompenet
+            }
+        }
+    ]
+});
+
+new Vue({
+    el: '#app',
+    data: {
+    },
+    methods: {
+        jumpIndex() {
+            this.$router.replace({name: "index"});
+        },
+        jumpNews() {
+            this.$router.replace({name: "news", params: {id: 1}});
+        }
+    },
+    router: router
+});
+</script>
+</html>
