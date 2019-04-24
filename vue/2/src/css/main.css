@@ -1,0 +1,21 @@
+.nav .nav-item {
+    color: #ccc;
+}
+
+.nav .router-link-active {
+    color: #000;
+}
+
+.header {
+    padding:20px;
+    background: orange;
+}
+
+.default {
+    background:yellow;
+}
+
+.footer {
+    padding:20px;
+    background: blue;
+}

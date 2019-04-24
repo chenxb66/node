@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="nav">
+      <router-link class="nav-item" to="/index">首页</router-link>
+      <router-link class="nav-item" to="/news/1">新闻</router-link>
+      </div>
+      <hr />
+      <router-view class="header" name="header"></router-view>
+      <router-view class="default"></router-view>
+      <router-view class="footer" name="footer"></router-view>
+    </div>
+  </body>
+  <script src="/bundle.min.js"></script>
+</html>
