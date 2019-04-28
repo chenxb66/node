@@ -9,5 +9,8 @@ export default {
         header: Header,
         default: Index,
         footer: Footer
-    }   
+    },
+    children: [
+        
+    ]
 }

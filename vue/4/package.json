@@ -1,0 +1,21 @@
+{
+  "name": "4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^2.1.1",
+    "style-loader": "^0.23.1",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.6"
+  },
+  "dependencies": {
+    "bootstrap": "^3.4.1"
+  },
+  "description": ""
+}
