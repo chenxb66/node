@@ -1,6 +1,3 @@
-/**
- * 简单的正式开发流程案例
- */
 const path = require('path');
 
 module.exports = {

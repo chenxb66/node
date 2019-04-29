@@ -1,5 +1,5 @@
 export default {
     template: `
-    <div><h3>底部</h3></div>
+    <div>尾部</div>
     `
-};
+}
